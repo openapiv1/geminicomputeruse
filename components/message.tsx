@@ -1,6 +1,6 @@
 "use client";
 
-import type { UIMessage } from "ai";
+import type { Message } from "ai";
 import { AnimatePresence, motion } from "motion/react";
 import { memo } from "react";
 import equal from "fast-deep-equal";
@@ -26,7 +26,7 @@ const PurePreviewMessage = ({
   isLatestMessage,
   status,
 }: {
-  message: UIMessage;
+  message: Message;
   isLoading: boolean;
   status: "error" | "submitted" | "streaming" | "ready";
   isLatestMessage: boolean;
